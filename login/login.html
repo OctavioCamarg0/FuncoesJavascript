@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form id="frmLogin" onsubmit="return validaFrmLogin()">
+        <label for="txtNomeUsuario">Usuário:</label>
+        <input type="text" id="txtNomeUsuario" name="txtNomeUsuario" required>
+
+        <label for="txtSenha">Senha:</label>
+        <input type="password" id="txtSenha" name="txtSenha" required>
+
+        <input type="submit" value="Login">
+    </form>
+    <div class="esqueci-senha">
+        <a href="#">Esqueci a minha senha</a>
+    </div>
+    <div class="cadastrar-usuario">
+        <a href="cadastro-usuario.html">Cadastrar Usuario</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
