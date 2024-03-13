@@ -1,0 +1,105 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto; /* Centralizar horizontalmente */
+    width: 40%; /* Definir largura do formulário */
+}
+
+
+.campoDePesquisa {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botoes {
+    margin-top: 12px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#conteudoRetornado,
+#conteudoRetornadoSecundario {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+#blocoResultados {
+    border: solid 1px black;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#paragrafosResultado {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#spanLeft {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 15px 10px 15px;
+    order: 1;
+}
+
+#spanRight {
+    font-size: 18px;
+    line-height: 1.5;
+    order: 2;
+    margin: 10px 15px 10px 15px;
+}
+

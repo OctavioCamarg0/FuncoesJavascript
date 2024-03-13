@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retorna EndereÃ§o</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Programa de consulta CEP</h1>
+
+        <form method="#" action="#" class="formulario">
+            <fieldset class="campoDePesquisa">
+                <legend>Consulta de CEP pelo endereço</legend>
+                <p>
+                    <label for="estado">Estado: </label>
+                    <select id="estado" name="estado">
+                        <option value=""></option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="cidade">Cidade: </label>
+                    <select name="cidade" id="cidade">
+                    </select>
+                </p>
+                <p>
+                    <label for="rua">Rua: </label>
+                    <input type="text" name="rua" id="rua">
+                </p>
+                <p class="botoes">
+                    <button type="button" onclick="pesquisaCepPeloEndereco()">PESQUISAR</button>
+                    <button type="reset" onclick="limpaCampoConteudoRetornado()">LIMPAR</button> 
+                </p>
+                <div id="conteudoRetornado">
+                </div>
+            </fieldset>
+            <br>
+
+        </form>
+        <br>
+        
+        <form action="#" method="#" class="formulario">
+            <fieldset class="campoDePesquisa">
+                <legend>Consulta de endereÃ§o pelo CEP</legend>
+                <p>
+                    <label for="cep">CEP: </label>
+                    <input type="text" name="cep" id="cep">
+                </p>
+                <p class="botoes">
+                    <button type="button" onclick="pesquisaEnderecoPeloCep()">PESQUISAR</button>
+                    <button type="reset" onclick="limpaCampoConteudoRetornadoSecundario()">LIMPAR</button>
+                </p>
+                <div id="conteudoRetornadoSecundario">
+
+                </div>
+            </fieldset>
+            <br>
+        </form>
+        <script src="script.js"></script>
+</body>
+</html>
